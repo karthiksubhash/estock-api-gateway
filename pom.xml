@@ -94,6 +94,11 @@
 					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-webapp-maven-plugin</artifactId>
+				<version>2.5.0</version>
+			</plugin>
 		</plugins>
 	</build>
 
