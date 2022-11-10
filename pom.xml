@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.EStockMarketApp</groupId>
 	<artifactId>api-gateway</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>api-gateway</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -30,6 +30,21 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+		<dependency>
+    		<groupId>org.springframework.cloud</groupId>
+      		<artifactId>spring-cloud-starter-sleuth</artifactId>
+    	</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
+		</dependency>
+		
+		<dependency>
+		  <groupId>com.rabbitmq</groupId>
+		  <artifactId>amqp-client</artifactId>
+		</dependency>
+		
 		
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>

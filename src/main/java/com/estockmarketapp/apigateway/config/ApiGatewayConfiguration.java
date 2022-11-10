@@ -22,7 +22,7 @@ public class ApiGatewayConfiguration {
 		.route("security-service", p-> p.path("/auth/**").filters(f -> f.filter(filter)).uri("lb://security-service"))
 		.route("company-info-service", p-> p.path("/company/**").filters(f -> f.filter(filter)).uri("lb://company-info-service"))
 		.route("stock-info-services", p-> p.path("/stock/**").filters(f -> f.filter(filter)).uri("lb://stock-info-services"))
-		.route("estock-market-info-reader", p-> p.path("/market/**").filters(f -> f.filter(filter)).uri("lb://estock-market-info-reader")) 
+		.route("estock-market-info-reader", p-> p.path("/info/**").filters(f -> f.filter(filter)).uri("lb://estock-market-info-reader")) 
 		.build();
 	}
 	
